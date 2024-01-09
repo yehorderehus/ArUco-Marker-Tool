@@ -1,0 +1,8 @@
+Kivy==2.2.1
+Kivy_examples==2.2.1
+kivymd==1.1.1
+numpy==1.25.2
+opencv_contrib_python==4.8.1.78
+opencv_python==4.8.1.78
+Pillow==10.2.0
+plyer==2.1.0
