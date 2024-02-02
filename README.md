@@ -9,7 +9,7 @@ https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
 
 All you need to do is print them out or use them from the templates folder
 
-Generate there: https://chev.me/arucogen/
+Generate here: https://chev.me/arucogen/
 
 ## Features
 
@@ -21,23 +21,45 @@ Generate there: https://chev.me/arucogen/
   
 ### Getting Started
 
-1. Clone the repository:
+- Clone the repository:
 
    ```bash
    git clone https://github.com/yehorderehus/ArUco-Marker-Tool
    ```
 
-2. Install dependencies (from the root of the repository)
+- Optionally, create a virtual environment with name `venv`:
+
+   ```bash
+   python -m venv venv
+   ```
+
+- ..activate the virtual environment. On Unix or MacOS:
+   ```bash
+   source venv/bin/activate
+   ```
+   On Windows:
+   ```bash
+   venv\Scripts\activate
+   ```
+
+- Install dependencies (from the root of the repository)
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Run the application:
+- Run the application. On Unix or MacOS:
 
+   ```bash
+   python3 user_app.py
+   ```
+   On Windows:
    ```bash
    python user_app.py
    ```
+
+### Feedback
+Click Rate App in application menu to rate the app. You can also submit experience or report bugs.
 
 ### Contributing
 Contributions are welcome! Please feel free to submit a Pull Request. This project is intended for demonstration purposes, but in case of right ideas, it may be extended to a full-fledged application.
