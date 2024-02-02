@@ -2,7 +2,14 @@
 
 The ArUco Marker Tool is an application built using KivyMD and OpenCV for detecting and visualizing ArUco markers in live camera streams or multimedia files.
 
-#### Warning: Do not try uploading media bigger than 1000 pixels, as it may freeze the app or significantly slow performance. Feel free to fork and fix this issue.
+#### Warning: Do not try uploading media bigger than 1000 pixels; it may freeze the app or significantly slow performance. Feel free to fork and fix this issue.
+
+## About ArUco markers
+https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
+
+All you need to do is print them out or use them from the templates folder
+
+Generate there: https://chev.me/arucogen/
 
 ## Features
 
