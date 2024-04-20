@@ -3,9 +3,9 @@ from kivy.lang import Builder
 from kivymd.uix.scrollview import MDScrollView
 from kivy.properties import ObjectProperty
 
-from handler import Handler
-from app_actions import AppActions
-from app_helper import app_helper
+from scripts.handler import Handler
+from scripts.app_actions import AppActions
+from scripts.app_helper import app_helper
 
 
 class UserApp(MDApp):
@@ -61,11 +61,16 @@ class UserApp(MDApp):
         self.app_actions.start_live_broadcast(self.live_source)
 
     def cam_screenshot_callback(self):
-        if self.handler.capture_frame() is False:
+        filename = self.handler.capture_frame()
+        if not filename:
             self.app_actions.pop_up(
                 header="Screenshot Error",
                 message="Unable to take a screenshot. "
                 "Please check if the media output or live broadcast is active.")
+        else:
+            self.app_actions.pop_up(
+                header="Screenshot Saved",
+                message=f"as {filename}")
 
     def open_url_callback(self, url):
         import webbrowser

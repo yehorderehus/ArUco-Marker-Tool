@@ -1,8 +1,9 @@
-# ArUco Marker Tool <img src="logo.png" alt="ArUco Marker Tool Logo" width="30"/>
+# ArUco Marker Tool <img src="templates/logo.png" alt="ArUco Marker Tool Logo" width="30"/>
+<img src="templates/arucoslender.jpg" height="240"/>
 
 The ArUco Marker Tool is an application built using KivyMD and OpenCV for detecting and visualizing ArUco markers in live camera streams or multimedia files.
 
-#### Warning: Do not try uploading media bigger than 1000 pixels; it may freeze the app or significantly slow performance. Feel free to fork and fix this issue.
+#### Warning: Do not try uploading media bigger than ~1000 pixels; it may freeze the app or significantly slow performance. Feel free to fork and fix this issue.
 
 ## About ArUco markers
 https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
@@ -33,7 +34,7 @@ Generate here: https://chev.me/arucogen/
    python -m venv venv
    ```
 
-- ..activate the virtual environment. On Unix or MacOS:
+- ..activate the virtual environment. On Linux or MacOS:
    ```bash
    source venv/bin/activate
    ```
@@ -48,7 +49,7 @@ Generate here: https://chev.me/arucogen/
    pip install -r requirements.txt
    ```
 
-- Run the application. On Unix or MacOS:
+- Run the application. On Linux or MacOS:
 
    ```bash
    python3 user_app.py

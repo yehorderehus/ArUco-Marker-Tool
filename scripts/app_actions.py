@@ -14,7 +14,7 @@ class AppActions:
         self.handler = handler_instance
 
         import os
-        self.checkbox_store = JsonStore(os.path.abspath("checkbox_states.json"))
+        self.checkbox_store = JsonStore(os.path.abspath("scripts/checkbox_states.json"))
 
     def start_live_broadcast(self, source):
         if self.handler.init_cap(source, name="live") is False:
@@ -83,6 +83,8 @@ class AppActions:
             ]
         )
         dialog.open()
+        if header == "Screenshot Saved":
+            Clock.schedule_once(lambda dt: dialog.dismiss(), 1)
 
     # TODO - more stable alignment
     def aruco_choose(self):

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-from augmentation import FrameAugmentation
+from scripts.augmentation import FrameAugmentation
 
 
 class ArUcoDetection:

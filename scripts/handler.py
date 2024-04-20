@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from plyer import filechooser
 
-from detection import ArUcoDetection
+from scripts.detection import ArUcoDetection
 
 
 class Handler:
@@ -172,7 +172,7 @@ class Handler:
 
     def capture_frame(self):
         if self.cap_check(name="live"):
-            frame = getattr(self, "cap_live").read()[1]
+            frame = self.refresh_cap(name="live")
         elif isinstance(self.the_media_output, list):
             frame = getattr(self, "the_media_output")[
                 getattr(self, "frame_index_media_output")]
@@ -196,9 +196,9 @@ class Handler:
 
         try:
             cv2.imwrite(save_path, frame)
-            return True
+            return filename
         except Exception:
-            return False
+            return
 
     def get_fps(self, name):
         return getattr(self, f"fps_{name}")
