@@ -12,6 +12,8 @@ All you need to do is print them out or use them from the templates folder
 
 Generate here: https://chev.me/arucogen/
 
+**See *templates* folder and try to experiment!**
+
 ## Features
 
 - **Live Camera Broadcast:** View real-time camera feed with ArUco marker detection.
